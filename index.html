@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio m4</title>
+  <script defer src="index.js"></script>
+  <script defer src="contact.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
+  
+
+</head>
+<body>
+  <section class="welcome">
+    <nav class="welcome__bar">
+      <div class="logo__container">
+        <img src="logo.png" alt="logo" class="logo">
+      </div>
+      <div class="menu__container">
+        <img src="menu.png" alt="menu" class="welcome__menu-logo">
+      </div>
+      <ul class="welcome__nav__links">
+        <li>Portfolio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+    <div class="welcome__text__container">
+      <p class="welcome__title">Hola</p>
+      <p class="welcome__subtitle">Soy Gonzaliski</p>
+    </div>
+    
+  </section>
+
+  <section class="about">
+    <h1 class="about__title">Soy Gonzaliski</h1>
+    <p class="about__text">Algo interesante sobre mi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab quasi soluta id dolore voluptates consectetur facilis? Distinctio ea sunt voluptas cupiditate perspiciatis fuga? Eaque, quasi commodi a eos sequi quam, hic cupiditate veritatis, tempora aliquam laudantium iure eveniet explicabo autem ipsum fuga perspiciatis numquam. Optio praesentium ipsam porro deserunt?</p>
+  </section>
+
+  <section class="services">
+    <h2 class="services__title">Mis servicios</h2>
+    <div class="services__card"></div>
+
+    <template id="services__card-template">
+      <div class="services__card-container">
+        <img class="services__card-img" src="cassette-tape.png" alt="casette">
+        <div class="services__card-title-container">
+          <h2 class="services__card-title">Me gusta la musica</h2>
+        </div>
+        <div class="services__card-text-container">
+          <p class="services__card-text"> me interesa Lorem ipsum dolor sit amet consectetur adipiscing elit ante congue, blandit sociosqu dis fermentum mauris eu rhoncus dignissim himenaeos</p>
+        </div>
+      </div>
+    </template>
+  </section>
+
+  <section class="home__contact"></section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="logo.png" alt="logo" class="logo">
+     <div class="footer__links-container">
+       <div class="footer__social">
+         <a href="instagram.com/gonmendez_" class="social__link">Instagram</a>
+         <img src="instagram.png" alt="" class="social__logo">
+       </div>
+       <div class="footer__social">
+         <a href="twitter.com/gonmendez_" class="social__link">Twitter</a>
+         <img src="twitter.png" alt="" class="social__logo">
+       </div>
+       <div class="footer__social">
+         <a href="github.com/gonzaliski" class="social__link">Github</a>
+         <img src="github.png" alt="" class="social__logo">
+       </div>
+     </div>
+  </footer>
+</body>
+</html>
