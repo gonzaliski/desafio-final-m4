@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio m4</title>
   <script defer src="index.js"></script>
-  <script defer src="contact.js"></script>
+  <script defer src="./components/contact.js"></script>
+  <script defer src="./components/header.js"></script>
+  <script defer src="./components/footer.js"></script>
+  <script defer src="burger-menu.js"></script>
+  
   <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./components/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
@@ -18,30 +22,29 @@
 </head>
 <body>
   <section class="welcome">
-    <nav class="welcome__bar">
-      <div class="logo__container">
-        <img src="logo.png" alt="logo" class="logo">
+    <header class="header"></header>
+    <div class="welcome__text"></div>
+    <template id="welcome__text-template">
+      <div class="welcome__text__container">
+        <p class="welcome__title">Hola</p>
+        <p class="welcome__subtitle">Soy Gonzaliski</p>
       </div>
-      <div class="menu__container">
-        <img src="menu.png" alt="menu" class="welcome__menu-logo">
-      </div>
-      <ul class="welcome__nav__links">
-        <li>Portfolio</li>
-        <li>Servicios</li>
-        <li>Contacto</li>
-      </ul>
-    </nav>
-    <div class="welcome__text__container">
-      <p class="welcome__title">Hola</p>
-      <p class="welcome__subtitle">Soy Gonzaliski</p>
-    </div>
+    </template> 
     
   </section>
 
-  <section class="about">
-    <h1 class="about__title">Soy Gonzaliski</h1>
-    <p class="about__text">Algo interesante sobre mi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab quasi soluta id dolore voluptates consectetur facilis? Distinctio ea sunt voluptas cupiditate perspiciatis fuga? Eaque, quasi commodi a eos sequi quam, hic cupiditate veritatis, tempora aliquam laudantium iure eveniet explicabo autem ipsum fuga perspiciatis numquam. Optio praesentium ipsam porro deserunt?</p>
-  </section>
+  <section class="about"></section>
+      <template id="about__template">
+        <div class="about__tt-container">
+          <h1 class="about__title">Soy Gonzaliski</h1>
+          <div class="about__text-container">
+            <p class="about__text">Algo interesante sobre mi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab quasi soluta id dolore voluptates consectetur facilis? Distinctio ea sunt voluptas cupiditate perspiciatis fuga? Eaque, quasi commodi a eos sequi quam, hic cupiditate veritatis, tempora aliquam laudantium iure eveniet explicabo autem ipsum fuga perspiciatis numquam. Optio praesentium ipsam porro deserunt?</p>
+          </div>
+        </div>
+        <img src="./assets/image 5.png" alt="" class="about__image">
+      </template>
+
+  
 
   <section class="services">
     <h2 class="services__title">Mis servicios</h2>
@@ -49,7 +52,7 @@
 
     <template id="services__card-template">
       <div class="services__card-container">
-        <img class="services__card-img" src="cassette-tape.png" alt="casette">
+        <img class="services__card-img" src="./assets/cassette-tape.png" alt="casette">
         <div class="services__card-title-container">
           <h2 class="services__card-title">Me gusta la musica</h2>
         </div>
@@ -63,22 +66,6 @@
   <section class="home__contact"></section>
 
   <footer class="footer">
-    <div class="footer__container">
-      <img src="logo.png" alt="logo" class="logo">
-     <div class="footer__links-container">
-       <div class="footer__social">
-         <a href="instagram.com/gonmendez_" class="social__link">Instagram</a>
-         <img src="instagram.png" alt="" class="social__logo">
-       </div>
-       <div class="footer__social">
-         <a href="twitter.com/gonmendez_" class="social__link">Twitter</a>
-         <img src="twitter.png" alt="" class="social__logo">
-       </div>
-       <div class="footer__social">
-         <a href="github.com/gonzaliski" class="social__link">Github</a>
-         <img src="github.png" alt="" class="social__logo">
-       </div>
-     </div>
   </footer>
 </body>
 </html>

@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   padding:40px;
+  height:660px;
 }
 
 @media (min-width:960px){
@@ -19,7 +20,8 @@
    
   }
   .contacto__title{
-    margin:  10px 50px 200px 10px;
+    font-size: 48px;
+    margin:  10px 60px 260px 0px;
   }
 }
 

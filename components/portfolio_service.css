@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+/* 
+.pys_container{
+  min-height: 100vh;
+} */
+
+.psc_container{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size:48px;
+  text-align: center;
+
+}
+.ps__title{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size:48px;
+  text-align: center;
+  margin: 0 auto 100px;
+}
+
+.services{
+  background-color: none;
+  background-color: black;
+  color: white;
+}
+
+.services__card-container{
+  min-width: 300px;
+}
+
+.portfservices__card-img{
+  height: 172px;
+  width: 290px;
+  margin:10px;
+}
+
+.portfservices__card-link{
+  color:#FC6F50;
+}

@@ -1,0 +1,25 @@
+.welcome__menu__window{
+  display:none;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.menu__options-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: 'Montserrat';
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.menu__close{
+  height: 80px;
+  padding:30px;
+}
+
+.welcome__menu-logo{
+  position: absolute;
+  right:40px;
+}
