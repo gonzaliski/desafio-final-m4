@@ -49,10 +49,10 @@ function sendFormInfo() {
         `,
       }),
     });
+    const name = formData.name.value
     formEl.reset();
-    alert(
-      formData.name.value.stringify() +", tu mensaje ha sido enviado."
-    );
+    console.log(name)
+    alert(name + ", tu mensaje ha sido enviado.");
   });
 }
 
