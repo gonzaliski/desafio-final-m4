@@ -18,8 +18,8 @@ function createContact(el){
     </div>
     <div class="menu__options-container">
       <div class="welcome__menu__window-options">
-        <a href="./portfolio/portfolio.html" class="menu__options__link">Portfolio</a>
-        <a href="./serivces/servicios.html" class="menu__options__link">Servicios</a>
+        <a href="../portfolio/portfolio.html" class="menu__options__link">Portfolio</a>
+        <a href="../serivces/servicios.html" class="menu__options__link">Servicios</a>
         <a href="/contact/contacto.html"  class="menu__options__link">Contacto</a>
       </div>
     </div>
@@ -27,8 +27,8 @@ function createContact(el){
     
   
   <ul class="welcome__nav__links">
-    <li><a href="./portfolio/portfolio.html" class="menu__options__link">Portfolio</a></li>
-    <li><a href="./serivces/servicios.html" class="menu__options__link">Servicios</a></li>
+    <li><a href="../portfolio/portfolio.html" class="menu__options__link">Portfolio</a></li>
+    <li><a href="../serivces/servicios.html" class="menu__options__link">Servicios</a></li>
     <li><a href="/contact/contacto.html"  class="menu__options__link">Contacto</a></li>
   </ul>
   </nav>
