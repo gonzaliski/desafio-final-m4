@@ -4,7 +4,7 @@ function createContact(el){
   componentEl.innerHTML = `
   <nav class="welcome__bar">
   <div class="logo__container">
-  <a href="/#">
+  <a href="./index.html">
   <img src="./assets/logo.png" alt="logo" class="logo">
     </a>
   </div>
