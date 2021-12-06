@@ -18,18 +18,18 @@ function createContact(el){
     </div>
     <div class="menu__options-container">
       <div class="welcome__menu__window-options">
-        <a href="./portfolio/portfolio.html" class="menu__options__link">Portfolio</a>
-        <a href="./services/servicios.html" class="menu__options__link">Servicios</a>
-        <a href="./contact/contacto.html"  class="menu__options__link">Contacto</a>
+        <a href="./portfolio.html" class="menu__options__link">Portfolio</a>
+        <a href="./servicios.html" class="menu__options__link">Servicios</a>
+        <a href="./contacto.html"  class="menu__options__link">Contacto</a>
       </div>
     </div>
   </div>
     
   
   <ul class="welcome__nav__links">
-    <li><a href="./portfolio/portfolio.html" class="menu__options__link">Portfolio</a></li>
-    <li><a href="./services/servicios.html" class="menu__options__link">Servicios</a></li>
-    <li><a href="./contact/contacto.html"  class="menu__options__link">Contacto</a></li>
+    <li><a href="./portfolio.html" class="menu__options__link">Portfolio</a></li>
+    <li><a href="./servicios.html" class="menu__options__link">Servicios</a></li>
+    <li><a href="./contacto.html"  class="menu__options__link">Contacto</a></li>
   </ul>
   </nav>
   `
