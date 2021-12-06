@@ -9,7 +9,7 @@ body{
 .welcome{
   display: grid;
   background: url(./assets/image\ 4.png) center;
-  background-size: 100%;
+
   height: 616px;
   
 }
@@ -17,6 +17,7 @@ body{
 @media(min-width: 960px){
   .welcome{
     background-position-x:unset;
+    background-size: 100%;
   }
 }
 
