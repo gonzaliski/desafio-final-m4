@@ -8,7 +8,8 @@ body{
 
 .welcome{
   display: grid;
-  background: url(./assets/image\ 4.png) center;
+  background: url(/assets/image\ 4.png) center;
+  background-size: 100%;
   height: 616px;
   
 }
@@ -25,7 +26,7 @@ body{
   align-items: center;
   margin: 0 20px 0 20px;
   height: 80px;
-  padding:10px;
+
 }
 
 @media(min-width: 960px){
@@ -35,8 +36,14 @@ body{
 }
 
 .logo{
-  height: 60px;
-  margin-top: 50px;
+  height: 80px;
+  margin-top: 60px;
+}
+@media(min-width: 960px){
+  .logo{
+    height: 80px;
+    margin-top: 40px;
+  }
 }
 
 .welcome__menu-logo{
@@ -201,73 +208,8 @@ body{
   
 }
 
-.services{
-  background-color: white;
-  font-family: 'Poppins';
-  padding-top: 60px;
-}
-
-.services__title{
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size:32px;
-  text-align: center;
-}
-@media (min-width: 950px){
-  .services__title{
-    font-size: 48px;
-  }
-}
-
-
-.services__card{
-  display:grid;
-  justify-content: center;
-}
-@media (min-width: 950px){
- .services__card{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap:100px;
-    padding: 0px 84px 0px 84px;
-    
-  }
-}
-
-.services__card-container{
-  height: auto;
-  width:240px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.services__card-img{
-  height: 120px;
-  width: 120px;
-  margin:10px;
-}
-
-
-
-.services__card-title{
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.services__card-text-container{
-  padding: 1px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.services__card-text{
-  text-align: center;
-  padding: 0px 15px 15px 15px;
-  margin: 0;
+.home__contact{
+  background-color: #141414;
 }
 
 .footer{
@@ -332,3 +274,4 @@ body{
 .social__logo{
   height:27px;
 }
+

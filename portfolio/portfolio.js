@@ -4,8 +4,8 @@ function addPortfolio(params = {}){
   cardTemplate.content.querySelector(".portfservices__card-img").setAttribute("src",params.image);
   cardTemplate.content.querySelector(".services__card-title").textContent = params.title;
   cardTemplate.content.querySelector(".services__card-text").textContent = params.description;
-  cardTemplate.content.querySelector(".portfservices__card-link").textContent = params.link;
-  cardTemplate.content.querySelector(".portfservices__card-link").setAttribute("href",params.link);
+  cardTemplate.content.querySelector(".portf__card-link").textContent = params.link;
+  cardTemplate.content.querySelector(".portf__card-link").setAttribute("href",params.link);
   
   const clone =  document.importNode(cardTemplate.content,true);
   cardElement.appendChild(clone);
@@ -25,9 +25,10 @@ function getPortfolio(){
         image:media,
         title:item.fields.portfolioTitle,
         description:item.fields.portfolioText,
-        link:item.fields.portfolioUrl
+        link:item.fields.portfolioLink
       }
     });
+
     return fieldCollection
   });
 }

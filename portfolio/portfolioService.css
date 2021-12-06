@@ -6,12 +6,20 @@ body{
   padding:0;
   background-color: black;
 }
+@media(min-width:960px){
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(194,50,129,1) 0%, rgba(0,239,255,1) 100%);
+}
+
+}
 /* 
 .pys_container{
   min-height: 100vh;
 } */
 
-.psc_container{
+.ps__container{
   font-family: 'Montserrat';
   font-weight: 700;
   font-size:48px;
@@ -22,8 +30,7 @@ body{
   font-family: 'Montserrat';
   font-weight: 700;
   font-size:48px;
-  text-align: center;
-  margin: 0 auto 100px;
+  color:white;
 }
 
 .services{
@@ -42,6 +49,22 @@ body{
   margin:10px;
 }
 
-.portfservices__card-link{
+.portf__card-link{
   color:#FC6F50;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
+.desktop__container{
+  text-align: center;
+  
+}
+@media(min-width:960px){
+  .desktop__container{
+    height:500px;
+    text-align: left;
+    padding:150px 0 200px 82px;
+  }
+
+}
+

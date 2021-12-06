@@ -15,7 +15,7 @@ function createContact(el){
    </label>
    <label class="contacto__label">
      <h4>Mensaje</h4>
-     <textarea class="contact__input-largo" rows="5"></textarea>
+     <textarea class="contact__input-largo" id="message" rows="5"></textarea>
    </label>
    <div>
      <button class="contacto__button">Enviar</button>
@@ -24,16 +24,41 @@ function createContact(el){
   </form>
   </section>
   `
-  componentEl.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    console.log("El form se envió")
-  })
 
   el.appendChild(componentEl)
+}
+
+function sendFormInfo() {
+  const formEl = document.querySelector(".contacto__form");
+
+  formEl.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+
+    const formData = evento.target;
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+
+      body: JSON.stringify({
+        to: "gon.mendez13@gmail.com",
+        message: `
+        Nombre: ${formData.name.value} <br> <br>
+        Email: ${formData.email.value} <br> <br>
+        Mensaje: ${formData.message.value}
+        `,
+      }),
+    });
+    formEl.reset();
+    alert(
+      formData.name.value.stringify() +", tu mensaje ha sido enviado."
+    );
+  });
 }
 
 
 (function main(){
   const formEl = document.querySelector(".home__contact")
-  createContact(formEl)
+  createContact(formEl);
+  sendFormInfo();
 })()
